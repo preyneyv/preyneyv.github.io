@@ -2,6 +2,8 @@ baseurl: ''
 url: 'https://preyneyv.github.io'
 permalink: pretty
 description: "A learning developer's perspective."
+plugins:
+  - jekyll-sitemap
 prose:
   rooturl: '_posts'
   siteurl: 'https://preyneyv.github.io/'

@@ -1,6 +1,7 @@
 baseurl: ''
 url: 'https://preyneyv.github.io'
 permalink: pretty
+description: "A learning developer's perspective."
 prose:
   rooturl: '_posts'
   siteurl: 'https://preyneyv.github.io/'
@@ -33,6 +34,10 @@ prose:
           alterable: true
           placeholder: "Choose Tags"
     _posts/static:
+      - name: "category"
+        field:
+            element: "hidden"
+            value: "page"
       - name: "layout"
         field:
           element: "hidden"

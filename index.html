@@ -1,9 +1,31 @@
 ---
 layout: default
-section: blog
+extra_stylesheets: [ '/landing/landing.css' ]
+extra_javascript: [ '/landing/slider.js' ]
 ---
 
-<div class='listing col6 pad4h margin3'>
+<div id="landing">
+  <div id="landing-slider">
+    <div style="background-image: url(landing/slider/IMG_20161203_171713.jpg)"></div>
+    <div style="background-image: url(landing/slider/IMG_20180920_183522.jpg)"></div>
+    <div style="background-image: url(landing/slider/IMG_20181005_175240.jpg)"></div>
+    <div style="background-image: url(landing/slider/IMG_20181006_115219.jpg)"></div>
+    <div style="background-image: url(landing/slider/IMG_20181125_182558.jpg)"></div>
+  </div>
+  <div id="landing-overlay">
+    <div id="overlay-content">
+      <div id="profile-picture">
+        <img src="https://avatars3.githubusercontent.com/u/13533898?s=240&v=4" alt="Profile Picture">
+      </div>
+      <div id="profile-details">
+        <div id="profile-name">Pranav Nutalapati</div>
+        <div id="profile-description">A 17 year old programmer, UI designer, logic creator and AI enthusiast.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
   {% for item in site.categories.blog limit:1000 %}
     {% capture date %}{{ item.date | date: '%B %Y' }}{% endcapture %}
     {% capture ndate %}{{ item.next.date | date: '%B %Y' }}{% endcapture %}
@@ -14,5 +36,3 @@ section: blog
     <a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}} <span class='date'>&#126; {{item.date | date:"%b %d"}}</span></a>
   {% endfor %}
 </div>
-
-{% include rss-link.html %}

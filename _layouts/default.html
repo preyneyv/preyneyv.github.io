@@ -1,31 +1,52 @@
 ---
-title: 'This is my Site Title'
+title: ''
+extra_stylesheets: []
+extra_javascript: []
 ---
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Site Title {% if page.url != '/index.html' %}| {{page.title}}{% endif %}</title>
+  <title>{% if page.url != '/' %}{{ page.title }} | {% endif %}Pranav Nutalapati</title>
   <meta charset='UTF-8'/>
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
   <link rel='alternate' type='application/rss+xml' title='RSS' href='{{site.url}}/blog.rss' />
   <link rel='shortcut icon' href='{{site.baseurl}}/img/favicon.ico' type='image/x-icon' />
+  <link href='{{site.baseurl}}/reset.css' rel='stylesheet' />
   <link href='{{site.baseurl}}/site.css' rel='stylesheet' />
+  {% for style in page.extra_stylesheets %}
+  <link href='{{style}}' rel='stylesheet' />
+  {% endfor %}
+
+  <script defer src='{{site.baseurl}}/site.js'></script>
+
+  {% for script in page.extra_javascript %}
+  <script src="{{script}}" defer></script>
+  {% endfor %}
 </head>
 <body>
-  <div class='container'>
-    <div class='col12 clearfix'>
-      <div class='header col6 margin3 pad4h'>
-        <div class='clearfix col12'>
-          <div class='menu fr'>
-            <a class='{% if page.section == "blog" %}active{% endif %}' href='{{site.baseurl}}/'>Blog</a>
-            <a class='{% if page.url == "about/" %}active{% endif %}' href='{{site.baseurl}}/about'>About</a>
-            <a href='//github.com/prose/starter'>Fork on GitHub</a>
-          </div>
-          <h1 class='title'><a href='{{site.baseurl}}/'>{{page.title}}</a></h1>
-        </div>
+  <header>
+    <a id="blog-title" class="reset" href="{{ site.url }}">
+      <span id="title-tag">preyneyv</span>
+      <span id="title-name">Pranav Nutalapati</span>
+    </a>
+    {% include nav-links.html %}
+  </header>
+  
+  {{ content }}
+  
+  <footer>
+    <div id="footer-1">
+      <div id="social-media">
+        <a href="https://github.com/preyneyv">Github</a>
+        <a href="https://twitter.com/preyneyv">Twitter</a>
+        <a href="https://www.linkedin.com/in/pranav-n/">LinkedIn</a>
+      </div>
+      <div id="rss-link">
+        <a class='rss' href='{{site.baseurl}}/blog.rss'>Subscribe via RSS</a>
       </div>
     </div>
-    {{content}}
-  </div>
-  <script src='{{site.baseurl}}/site.js'></script>
+    <div id="footer-2">
+      Powered by Jekyll and Github Pages using a custom theme. <a href="https://github.com/preyneyv/preyneyv.github.io">Fork me on Github</a>
+    </div>
+  </footer>
 </body>

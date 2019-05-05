@@ -1,7 +1,6 @@
 ---
 origin: /
-title: Blog
-description: Occasional Blog Posts
+title: Pranav Nutalapati
 ---
 
 <?xml version='1.0' encoding='utf-8' ?>
@@ -9,7 +8,7 @@ description: Occasional Blog Posts
 <channel>
   <title>{{page.title}}</title>
   <link>{{site.baseurl}}</link>
-  <description>{{page.description}}</description>
+  <description>{{site.description}}</description>
   <language>en</language>
   {% for item in site.categories.blog limit:40 %}{% include rss-item.xml %}{% endfor %}
 </channel>

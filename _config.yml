@@ -1,9 +1,10 @@
 baseurl: ''
+url: 'https://preyneyv.github.io'
 permalink: pretty
 prose:
   rooturl: '_posts'
-  siteurl: 'http://preyneyv.github.io/'
-  relativeLinks: 'http://preyneyv.github.io/links.jsonp'
+  siteurl: 'https://preyneyv.github.io/'
+  relativeLinks: 'https://preyneyv.github.io/links.jsonp'
   media: 'media'
   metadata:
     _posts:

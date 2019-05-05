@@ -30,6 +30,7 @@ prose:
         field:
           element: "multiselect"
           label: "Add Tags"
+          alterable: true
           placeholder: "Choose Tags"
     _posts/static:
       - name: "layout"

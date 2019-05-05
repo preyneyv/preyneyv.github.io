@@ -91,3 +91,8 @@ footer a[href] {
   font-size: 0.9em;
   text-align: center;
 }
+
+/* Container */
+#container {
+  padding: 64px calc(50vw - 400px);
+}

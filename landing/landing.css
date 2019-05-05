@@ -1,3 +1,4 @@
+/* Landing slider styles */
 #landing {
   position: relative;
 }
@@ -60,5 +61,66 @@
 #profile-description {
   font-size: 1.2em;
   line-height: 1.2;
+  opacity: 0.7;
+}
+
+/* Post Showcase */
+#post-showcase {
+  display: grid;
+  grid-gap: 32px;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: start;
+}
+
+.post {
+  box-shadow: 0 7px 15px rgba(9, 137, 160, 0.349);
+  padding: 20px;
+  transition: box-shadow 300ms;
+}
+.post:hover {
+  box-shadow: 0 9px 20px rgba(9, 137, 160, 0.50);
+}
+
+.post-link:hover {
+  border: 0 !important;
+}
+.post-date {
+  font-weight: bold;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  opacity: 0.3;
+}
+.post-title {
+  font-size: 1.2em;
+  margin-top: 8px;
+}
+
+/* Past posts */
+#past-posts {
+  margin-top: 56px;
+}
+
+#past-posts h4 {
+  margin-bottom: 4px;
+  margin-top: 32px;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 2em;
+  opacity: 0.2;
+}
+
+#past-posts .item {
+  padding: 10px 0;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--highlight);
+}
+#past-posts .item .date {
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-right: 8px;
+}
+
+#past-posts .item:hover {
   opacity: 0.7;
 }

@@ -25,14 +25,27 @@ extra_javascript: [ '/landing/slider.js' ]
   </div>
 </div>
 
-<div>
-  {% for item in site.categories.blog limit:1000 %}
-    {% capture date %}{{ item.date | date: '%B %Y' }}{% endcapture %}
-    {% capture ndate %}{{ item.next.date | date: '%B %Y' }}{% endcapture %}
+<div id="container">
+  <div id="post-showcase">
+    {% for item in site.categories.blog limit:3 %}
+    <a class="post-link" href="{{site.baseurl}}{{item.url}}">
+      <div class="post">
+        <div class="post-date">{{ item.date | date: '%b %d, %Y' }}</div>
+        <div class="post-title">{{ item.title }}</div>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+  
+  <div id="past-posts">
+    {% for item in site.categories.blog offset:3 limit:20 %}
+      {% capture date %}{{ item.date | date: '%B %Y' }}{% endcapture %}
+      {% capture ndate %}{{ item.next.date | date: '%B %Y' }}{% endcapture %}
 
-    {% if date != ndate %}
-      <h4 class='month'>{{item.date | date: '%B %Y'}}</h4>
-    {% endif %}
-    <a class='item' href='{{site.baseurl}}{{item.url}}'>{{item.title}} <span class='date'>&#126; {{item.date | date:"%b %d"}}</span></a>
-  {% endfor %}
+      {% if date != ndate or forloop.first %}
+        <h4 class='month'>{{item.date | date: '%B %Y'}}</h4>
+      {% endif %}
+      <div><a class='item reset' href='{{site.baseurl}}{{item.url}}'><span class='date'>{{item.date | date:"%d"}}</span> {{item.title}}</a></div>
+    {% endfor %}
+  </div>
 </div>

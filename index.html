@@ -38,7 +38,7 @@ extra_javascript: [ '/landing/slider.js' ]
   </div>
   
   <div id="past-posts">
-    {% for item in site.categories.blog offset:0 limit:20 %}
+    {% for item in site.categories.blog offset:3 limit:20 %}
       {% capture date %}{{ item.date | date: '%B %Y' }}{% endcapture %}
       {% capture ndate %}{{ item.next.date | date: '%B %Y' }}{% endcapture %}
 

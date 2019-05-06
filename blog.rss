@@ -6,7 +6,7 @@ title: Pranav Nutalapati
 <rss version='2.0' xml:base='{{page.url}}' xmlns:dc='http://purl.org/dc/elements/1.1/'>
 <channel>
   <title>{{page.title}}</title>
-  <link>{{site.baseurl}}</link>
+  <link>{{site.url}}</link>
   <description>{{site.description}}</description>
   <language>en</language>
   {% for item in site.categories.blog limit:40 %}{% include rss-item.xml %}{% endfor %}

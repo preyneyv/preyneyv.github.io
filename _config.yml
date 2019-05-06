@@ -35,7 +35,7 @@ prose:
           label: "Add Tags"
           alterable: true
           placeholder: "Choose Tags"
-    _posts/static:
+    _posts/pages:
       - name: "category"
         field:
             element: "hidden"

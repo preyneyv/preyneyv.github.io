@@ -1,10 +1,21 @@
 ---
 layout: default
+section: page
 ---
+<div id="container">
+  <div id="article">
+    <div class="heading">
+      <h1>{{page.title}}</h1>
+    </div>
+    <div class="prose">
+      {{content}}
+    </div>
+  </div>
+</div>
+<!-- <div class='listing col6 pad4h margin3'>
 
-<div class='listing col6 pad4h margin3'>
   <h2>{{page.title}}</h2>
   <div class='prose'>
     {{content}}
   </div>
-</div>
+</div> -->

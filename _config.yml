@@ -10,7 +10,7 @@ prose:
   relativeLinks: 'https://preyneyv.github.io/links.jsonp'
   media: 'media'
   metadata:
-    _posts:
+    _posts/posts:
       - name: "category"
         field:
           element: "hidden"

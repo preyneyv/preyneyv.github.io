@@ -5,12 +5,12 @@ published: true
 title: The Benefits of Being a Programmer.
 tags: []
 ---
-Tedious tasks. We've all been given them before.
+Boring tasks. We've all had to do them before.
 
 - "Create 340 email accounts, one for each student."
 - "We need around 150 QR codes! And the event is in 2 days!"
 
-Those are two tasks that I was assigned at school. But, there's one problem: I hate boring work (and I'm assuming most people do, hence why it's called boring work). Now your average Joe would surrender to his destiny and sit down for 8 hours, doing what he has to do. But not this Joe. This Joe cracks his knuckles in eagerness and anticipation.
+Those are two tasks that I was assigned at school. But, there's one problem: I hate boring work (and I'm assuming most people do, hence its name). Now your average Joe would surrender to his destiny and sit down for 8 hours, doing what he has to do. But not this Joe. This Joe cracks his knuckles in eagerness and anticipation.
 
 "But Pranav," I hear you ask, "didn't you just say you didn't like this type of task?"
 
@@ -22,7 +22,7 @@ At my school, we use Google Suite for Gmail, Drive, Docs, etc. Or at least, the 
 
 Luckily, the school had all their students' first names, last names and grades (and some other information) in an Excel sheet. If it were on a paper register, I'd be toast. I extracted just the columns I cared about and saved it as a .csv file. After poking around in the Google Admin panel, I saw that the panel supported bulk import via a specific structure of .csv file. It seemed simple enough - I'd write a Python script to take in the school's data file and spit out a file mirroring the structure needed by Google. But, as I should have known, nothing is ever that simple.
 
-For the email IDs (which obviously weren't present in the data file), I decided to go with a simple enough format: `[first][last]@lsb.edu.in`. A little bit of Googling and some CSV readers and writers later, I had what I thought should have been a functioning script. I run it and... error. Apparently, some people in the data file didn't have a last name. I didn't even consider that possibility! Some error handling later and we have a file that Google Admin accepts!
+For the email IDs (which obviously weren't present in the data file), I decided to go with a simple enough format: `[first][last]@lsb.edu.in`. A little bit of Googling and some CSV readers and writers later, I had what I thought should have been a functioning script. I run it and... error. Apparently, some people in the data file didn't have a last name. I didn't even consider that as a possibility! Some error handling later and we have a file that Google Admin accepts.
 
 Success!
 
@@ -33,6 +33,12 @@ Recently, my school had the privilege of hosting an IC3 Regional Forum. It was a
 Similar to the previous task, I didn't want to sit down and make QR codes for each and every individual delegate. Python to the rescue! See, the nice thing about code is that it doesn't have feelings (yet). It will do the same task over and over again if you need it to. I requested the events team for the delegates' details and I received them in the form of a Google Sheet.
 
 The same drill: Download the sheet, delete the columns I don't care about, save as csv. I installed a QR code generating library for Python, then got to work. First, I decided to work on code to make a single image. Easy enough, the library was super developer-friendly. I then thought, hey, why have these normal, dull, square QR codes when you can make them unique?
+
+{% include image.html
+	src="/media/309qzt.jpg"
+	alt="Drake QR code meme"
+	caption="QR code blurred to hide information. Sorry!"
+%}
 
 So I brought out my image processing skills that I picked up at my internship and got to work making the QR code look much nicer, without affecting its ability to be scanned. Did you know that you can cover about 30% of the code and it will still scan correctly, without any problems?
 

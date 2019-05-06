@@ -1,10 +1,8 @@
 ---
 layout: blog
 category: blog
-published: false
+published: true
 title: The Benefits of Being a Programmer.
-splash: ''
-tags: ''
 ---
 Tedious tasks. We've all been given them before.
 

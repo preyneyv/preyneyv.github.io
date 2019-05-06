@@ -96,3 +96,69 @@ footer a[href] {
 #container {
   padding: 64px calc(50vw - 400px);
 }
+
+/* Article styles */
+#article .heading h1 {
+  font-size: 4em;
+  font-weight: 600;
+  line-height: 0.9;
+}
+
+#article .heading .date {
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  font-size: 2em;
+  color: var(--highlight);
+  font-weight: lighter;
+}
+#article .heading .estimate {
+  opacity: 0.3;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-top: 24px;
+  display: block;
+}
+#article .heading {
+  margin-bottom: 56px;
+}
+
+#article .prose {
+  font-size: 23px;
+  line-height: 1.5;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#article h1 {
+  font-weight: 600;
+  font-size: 2.5em;
+  margin: 32px 0 20px;
+  font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
+  /* opacity: 0.; */
+}
+
+#article h2 {
+  font-weight: 300;
+  font-size: 2em;
+  margin: 32px 0 16px;
+}
+
+#article h3 {
+  font-size:1.5em;
+  margin: 24px 0 10px;
+  line-height:1.5em;
+}
+
+#article p {
+  margin:0 0 24px;
+}
+#article ul {
+  list-style: disc;
+  padding-left: 32px;
+  margin-bottom: 24px;
+}
+
+#article p:last-child { margin-bottom:0;}
+
+.splash img {
+  width: 100%;
+}

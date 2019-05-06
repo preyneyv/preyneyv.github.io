@@ -21,8 +21,11 @@ And I find that more enjoyable.
 
 At my school, we use Google Suite for Gmail, Drive, Docs, etc. Or at least, the teachers did. At the start of grade 11, a year after the school introduced iPads, I suggested, "Why don't we give students email IDs as well?" I thought that it would help everyone better utilize the iPads that we spent so much for. Naturally, the task of creating these is monotonous. So, I turned to Python for help.
 
+## Sub points
+
 Luckily, the school had all their students' first names, last names and grades (and some other information) in an Excel sheet. If it were on a paper register, I'd be toast. I extracted just the columns I cared about and saved it as a .csv file. After poking around in the Google Admin panel, I saw that the panel supported bulk import through a specific structure of .csv file. It seemed simple enough - I'd write a Python script to take in the school's data file and spit out a file mirroring the structure needed by Google. But, as I should have known, nothing is ever that simple.
 
+### Some more sub points
 For the email IDs (which obviously weren't present in the data file), I decided to go with a simple enough format: {first name}{last name}@lsb.edu.in. A little bit of Googling and some CSV readers and writers later, I had what I thought should have been a functioning script. I run it and... error. Apparently, some people in the data file didn't have a last name. I didn't even consider that as a possibility! Some error handling later and we have a file that Google Admin accepts.
 
 Success!

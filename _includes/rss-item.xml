@@ -1,6 +1,6 @@
 <item>
   <title>{{item.title | xml_escape}}</title>
-  <link>{{site.baseurl}}{{item.url}}</link>
+  <link>{{site.url}}{{item.url}}</link>
   <description>{{item.excerpt | markdownify | xml_escape}}</description>
   <content:encoded>{{ item.content | markdownify | xml_escape }}</content:encoded>
   <pubDate>{{item.date | date_to_xmlschema}}</pubDate>

@@ -125,7 +125,7 @@ footer a[href] {
 
 #article .prose {
   font-size: 23px;
-  line-height: 1.5;
+  line-height: 1.7;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 #article h1 {
@@ -151,14 +151,128 @@ footer a[href] {
 #article p {
   margin:0 0 24px;
 }
-#article ul {
+#article em {
+  font-style: italic;
+}
+#article strong {
+  font-weight: bold;
+}
+#article code {
+  font-family: 'Courier New', Courier, monospace;
+  background: #eee;
+  padding: 0 1px;
+  margin: 0 3px;
+}
+#article pre.highlight code {
+  background: none;
+}
+#article pre.highlight {
+  background: #eee;
+  padding: 12px 16px;
+}
+
+#article ul, #article ol {
   list-style: disc;
   padding-left: 32px;
   margin-bottom: 24px;
 }
+#article ol {
+  list-style-type: decimal;
+}
 
 #article p:last-child { margin-bottom:0;}
 
+#article p.image {
+  text-align: center;
+  margin: 36px 0;
+}
+#article p.image img {
+  max-width: 100%;
+}
+
+#article p.image em {
+  display: block;
+  text-align: center;
+  font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
+  font-style: italic;
+  opacity: 0.5;
+  font-weight: 300;
+  font-size: 0.9em;
+}
+
+#article blockquote {
+  font-style: italic;
+  padding: 0 calc(50% - 300px);
+  margin: 36px 0;
+  opacity: 0.8;
+  position: relative;
+}
+
+#article blockquote::before {
+  content: "“";
+  font-size: 80px;
+  position: absolute;
+  left: calc(50% - 300px - 56px);
+  top: -20px;
+  opacity: 0.1;
+}
+
+
 .splash img {
   width: 100%;
+}
+
+/* Tag styling */
+#tags {
+  margin-top: 8px;
+}
+#tags span {
+  word-break: keep-all;
+  white-space: nowrap;
+  display: inline-block;
+  cursor: default;
+  background: #eee;
+  padding: 8px 16px;
+  border-radius: 100px;
+  margin-top: 16px;
+  margin-right: 4px;
+}
+
+
+/* Sharing buttons */
+#sharing {
+  margin-top: 60px;
+  position: relative;
+}
+#sharing::before {
+  content: '...';
+  display: block;
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 20px;
+  font-size: 20px;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+#sharing h4 {
+  margin-bottom: 4px;
+  margin-top: 32px;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 2em;
+  opacity: 0.2;
+  margin-bottom: 16px;
+}
+#sharing .links a {
+  margin-right: 12px;
+}
+
+@media screen and (max-width: 864px) {
+  #container {
+    padding: 64px 32px;
+  }
 }

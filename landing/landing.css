@@ -39,6 +39,10 @@
 
 #overlay-content {
   width: 600px;
+  text-align: center;
+}
+#profile {
+  text-align: left;
   display: flex;
 }
 #profile-picture img {
@@ -123,4 +127,13 @@
 
 #past-posts .item:hover {
   opacity: 0.7;
+}
+
+.subscribe-button {
+  display: inline-block;
+  padding: 12px 20px;
+  text-decoration: none;
+  margin: 24px 8px 0;
+  background: white;
+  color: var(--highlight);
 }

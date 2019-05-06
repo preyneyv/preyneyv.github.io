@@ -3,6 +3,7 @@ layout: blog
 category: blog
 published: true
 title: The Benefits of Being a Programmer.
+tags: []
 ---
 Tedious tasks. We've all been given them before.
 
@@ -17,17 +18,17 @@ Well, yes, I did. But I'm not eager for the task. As a programmer, instead of sp
 
 ## The First Task
 
-At my school, we use Google Suite for Gmail, Drive, Docs, etc. Or at least, the teachers did. At the start of grade 11, a year after the school introduced iPads, I suggested, "Why don't we give students email IDs as well?" I thought that it would help everyone better utilize the iPads that we spent so much for. Naturally, the task of creating these is monotonous. So, I turned to Python for help.
+At my school, we use Google Suite for Gmail, Drive, Docs, etc. Or at least, the teachers did. At the start of grade 11, a year after the school introduced iPads, I suggested, "Why don't we give students email IDs as well?" I thought that it would help everyone better utilize the iPads that we spent so much for. The task of creating these is monotonous. So, I turned to Python for help.
 
 Luckily, the school had all their students' first names, last names and grades (and some other information) in an Excel sheet. If it were on a paper register, I'd be toast. I extracted just the columns I cared about and saved it as a .csv file. After poking around in the Google Admin panel, I saw that the panel supported bulk import via a specific structure of .csv file. It seemed simple enough - I'd write a Python script to take in the school's data file and spit out a file mirroring the structure needed by Google. But, as I should have known, nothing is ever that simple.
 
-For the email IDs (which obviously weren't present in the data file), I decided to go with a simple enough format: {first name}{last name}@lsb.edu.in. A little bit of Googling and some CSV readers and writers later, I had what I thought should have been a functioning script. I run it and... error. Apparently, some people in the data file didn't have a last name. I didn't even consider that possibility! Some error handling later and we have a file that Google Admin accepts!
+For the email IDs (which obviously weren't present in the data file), I decided to go with a simple enough format: `[first][last]@lsb.edu.in`. A little bit of Googling and some CSV readers and writers later, I had what I thought should have been a functioning script. I run it and... error. Apparently, some people in the data file didn't have a last name. I didn't even consider that possibility! Some error handling later and we have a file that Google Admin accepts!
 
 Success!
 
 ## The Second Task
 
-Recently, my school had the privilege of hosting an IC3 Regional Forum. It was absolutely amazing and it was one of the largest events held at my school. So naturally, in the week leading up to it, there was a flurry of planning and panic. Amidst this storm, my director sent me an email showcasing a QR code that he had received for a previous event. The idea was that it would speed up the long queues at the registration desk in front of every event. Brilliant!
+Recently, my school had the privilege of hosting an IC3 Regional Forum. It was absolutely amazing and it was one of the largest events held at my school. Naturally, in the weeks leading up to it, there was a flurry of planning and panic. Amidst this storm, my director sent me an email showcasing a QR code that he had received for a previous event. The idea was that it would speed up the long queues at the registration desk in front of every event. Brilliant!
 
 Similar to the previous task, I didn't want to sit down and make QR codes for each and every individual delegate. Python to the rescue! See, the nice thing about code is that it doesn't have feelings (yet). It will do the same task over and over again if you need it to. I requested the events team for the delegates' details and I received them in the form of a Google Sheet.
 
@@ -35,7 +36,7 @@ The same drill: Download the sheet, delete the columns I don't care about, save 
 
 So I brought out my image processing skills that I picked up at my internship and got to work making the QR code look much nicer, without affecting its ability to be scanned. Did you know that you can cover about 30% of the code and it will still scan correctly, without any problems?
 
-Once I got the look I was going for, all that was left to do was to throw everything in a loop and voilà! Now I had a folder full of QR codes and... 150 people... to... email... them to. Dangnabbit.
+Once I got the look I was going for, all that was left to do was to throw everything in a loop and voilà! Now I had 150 QR codes and... 150 people... to... email... them to. Dangnabbit.
 
 My mind first went to mail merge. Now I'm not a fan of Outlook, but in dire times, you turn to even your worst enemy. Unfortunately, Outlook doesn't support changing the attachment per person you're send to, so that's a no-go. Idea #2 was a plugin for Google Sheets that does support mail merge with changing attachments, but I was smacked with a paywall limiting the number of accounts to 50.
 

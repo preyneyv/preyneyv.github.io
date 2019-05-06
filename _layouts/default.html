@@ -13,6 +13,7 @@ extra_javascript: []
   <link rel='shortcut icon' href='{{site.baseurl}}/img/favicon.ico' type='image/x-icon' />
   <link href='{{site.baseurl}}/reset.css' rel='stylesheet' />
   <link href='{{site.baseurl}}/site.css' rel='stylesheet' />
+  <link href='{{site.baseurl}}/highlight.css' rel='stylesheet' />
   {% for style in page.extra_stylesheets %}
   <link href='{{style}}' rel='stylesheet' />
   {% endfor %}
@@ -42,7 +43,10 @@ extra_javascript: []
         <a href="https://www.linkedin.com/in/pranav-n/">LinkedIn</a>
       </div>
       <div id="rss-link">
-        <a class='rss' href='{{site.baseurl}}/blog.rss'>Subscribe via RSS</a>
+        <span>Subscribe via</span>
+        <a class="rss" target="_blank" href="http://eepurl.com/gp_8fv">Email</a>
+        /
+        <a class='rss' target="_blank" href='{{site.baseurl}}/blog.rss'>RSS</a>
       </div>
     </div>
     <div id="footer-2">

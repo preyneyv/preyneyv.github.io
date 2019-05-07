@@ -23,6 +23,8 @@ extra_javascript: []
   {% for script in page.extra_javascript %}
   <script src="{{script}}" defer></script>
   {% endfor %}
+
+  {% include g-analytics.html %}
 </head>
 <body>
   <header>

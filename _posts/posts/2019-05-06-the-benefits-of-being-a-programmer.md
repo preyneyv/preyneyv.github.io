@@ -4,6 +4,7 @@ category: blog
 published: true
 title: The Benefits of Being a Programmer.
 tags: []
+comments: true
 ---
 Boring tasks. We've all had to do them before.
 

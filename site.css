@@ -26,6 +26,7 @@ header {
   text-decoration: none;
   color: inherit;
   display: block;
+  font-size: 18px;
   width: 175px;
   overflow-y: hidden;
   overflow-x: visible;
@@ -101,7 +102,7 @@ footer a[href] {
 #article .heading h1 {
   font-size: 4em;
   font-weight: 600;
-  line-height: 0.9;
+  line-height: 1;
 }
 
 #article .heading .date {
@@ -124,7 +125,7 @@ footer a[href] {
 }
 
 #article .prose {
-  font-size: 23px;
+  font-size: 1.28em;
   line-height: 1.7;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -132,6 +133,7 @@ footer a[href] {
   font-weight: 600;
   font-size: 2.5em;
   margin: 32px 0 20px;
+  line-height: 1.2;
   font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
   /* opacity: 0.; */
 }
@@ -198,6 +200,7 @@ footer a[href] {
   opacity: 0.5;
   font-weight: 300;
   font-size: 0.9em;
+  line-height: 1.2;
 }
 
 #article blockquote {
@@ -274,5 +277,30 @@ footer a[href] {
 @media screen and (max-width: 864px) {
   #container {
     padding: 64px 32px;
+  }
+}
+@media screen and (max-width:664px) {
+  body {
+    font-size: 16px;
+  }
+  #container {
+    padding: 16px;
+  }
+  #article .heading {
+    margin-bottom: 32px;
+  }
+  #article .heading h1 {
+    margin: 0.5em 0;
+    font-size: 2.5em;
+  }
+  footer {
+    font-size: 18px;
+  }
+  #footer-1 {
+    display: block;
+    text-align: center;
+  }
+  #rss-link {
+    margin-top: 12px;
   }
 }

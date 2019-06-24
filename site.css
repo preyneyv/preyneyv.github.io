@@ -192,7 +192,8 @@ footer a[href] {
   max-width: 100%;
 }
 
-#article p.image em {
+#article p.image em,
+#article p.video em {
   display: block;
   text-align: center;
   font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
@@ -201,6 +202,14 @@ footer a[href] {
   font-weight: 300;
   font-size: 0.9em;
   line-height: 1.2;
+}
+
+#article p.video {
+  text-align: center;
+  margin: 36px 0;
+}
+#article p.video video {
+  max-width: 100%;
 }
 
 #article blockquote {
@@ -293,6 +302,9 @@ footer a[href] {
     margin: 0.5em 0;
     font-size: 2.5em;
   }
+  #article .prose {
+    line-height: 1.5;
+  }
   footer {
     font-size: 18px;
   }
@@ -303,4 +315,15 @@ footer a[href] {
   #rss-link {
     margin-top: 12px;
   }
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px dashed #ddd;
+  margin: 40px 0;
+}
+
+small {
+  font-size: 0.5em;
+  opacity: 0.4;
 }

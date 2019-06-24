@@ -4,7 +4,7 @@ category: blog
 published: true
 title: Making the Same Thing Again and Again
 tags: [Student Council Elections, Timeline]
-comments: false
+comments: true
 ---
 You know, conventional wisdom states that it really isn't that good an idea to 
 do the same thing again and again. And conventional wisdom is right. As Einstein

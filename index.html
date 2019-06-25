@@ -36,8 +36,8 @@ extra_javascript: [ '/landing/slider.js' ]
     {% for item in site.categories.blog limit:3 %}
     <a class="post-link" href="{{site.baseurl}}{{item.url}}">
       <div class="post">
-        <div class="post-date">{{ item.date | date: '%b %d, %Y' }}</div>
         <div class="post-title">{{ item.title }}</div>
+        <div class="post-date">{{ item.date | date: '%b %d, %Y' }}</div>
       </div>
     </a>
     {% endfor %}

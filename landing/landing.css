@@ -76,13 +76,18 @@
   display: grid;
   grid-gap: 32px;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  align-items: start;
+  align-items: stretch;
 }
 
 .post {
   box-shadow: 0 7px 15px rgba(9, 137, 160, 0.349);
   padding: 20px;
   transition: box-shadow 300ms;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
 }
 .post:hover {
   box-shadow: 0 9px 20px rgba(9, 137, 160, 0.50);
@@ -99,7 +104,8 @@
 }
 .post-title {
   font-size: 1.2em;
-  margin-top: 8px;
+  line-height: 1.2;
+  margin-bottom: 8px;
 }
 
 /* Past posts */

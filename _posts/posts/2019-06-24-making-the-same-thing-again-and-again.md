@@ -145,7 +145,7 @@ Also, where's the fun in a boring table of results right? I mean, the students g
 
 ------
 
-Thank you so much for reading! For those of you keeping count, that is *five* (count 'em) versions of the same app over a timeline of four years (2015 - 2019). Pretty cool, right?
+Thank you so much for reading! For those of you keeping count, that is *five* (count 'em) versions of the same app over a timeline of four years (2015 - 2019). The coolest thing for me is being able to scroll up and compare all these versions of the same app, compare how my designing has changed over the years.
 
 If this sort of thing interests you, feel free to subscribe to the newsletter using the link at the bottom. Or if you're super-fancy, there's an RSS feed too!
 

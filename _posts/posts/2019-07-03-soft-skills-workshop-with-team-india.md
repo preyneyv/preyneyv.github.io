@@ -6,6 +6,7 @@ title: Soft Skills Workshop with Team India
 tags: [WorldSkills]
 ---
 
+
 Last weekend, I attended a team building workshop with Team India for [WorldSkills Kazan](https://worldskills2019.com/en/). Having previously attended similar workshops in my school, I had a certain idea of what the sessions would consist of.
 
 My expectations involved activities that required everyone to collaborate in order to be completed, such as Spider's Web. Through these tasks, we would pick up leadership ideals that we could implement in the future. We would also be more comfortable with each other in the future.

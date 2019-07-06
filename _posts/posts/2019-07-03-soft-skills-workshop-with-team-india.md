@@ -30,7 +30,7 @@ The last day was a fun one. We broke up into small teams and were given the task
 This activity required both good planning and good execution. We also got to see the various thought processes of competitors and experts with different backgrounds and participating in different skill contests.
 
 {% include image.html
-src="/media/catapults.jpeg"
+src="/media/catapults.jpg"
 alt="Catapults"
 caption="My team won!"
 %}

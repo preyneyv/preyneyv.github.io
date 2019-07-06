@@ -27,7 +27,12 @@ It really brought out the importance of planning, teamwork, and collaboration, b
 The last day was a fun one. We broke up into small teams and were given the task of building a catapult out of PVC pipes, rubber bands, and rope. The objective was to make the catapult that shoots the furthest.
 
 This activity required both good planning and good execution. We also got to see the various thought processes of competitors and experts with different backgrounds and participating in different skill contests.
-~~My team won.~~
+
+{% include image.html
+src="/media/catapults.jpeg"
+alt="Catapults"
+caption="My team won!"
+%}
 
 We then had a talk by a kickboxer who came up from practically nothing and went on to win gold medals. Every motivational speech talks about "believing in yourself", but his talk was exceptional because he was a living example of that.
 

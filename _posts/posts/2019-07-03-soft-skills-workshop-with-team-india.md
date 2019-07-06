@@ -1,6 +1,7 @@
 ---
 layout: blog
 category: blog
+comments: true
 published: true
 title: Soft Skills Workshop with Team India
 tags: [WorldSkills]

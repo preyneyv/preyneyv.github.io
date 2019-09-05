@@ -1,0 +1,55 @@
+body {
+    height: auto;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+#__brfv5 {
+    pointer-events: none;
+}
+
+#__brfv5 div.abs.tl10,
+#__brfv5__threejs_canvas,
+#__brfv5__image_canvas,
+#__brfv5 a.abs {
+    display: none;
+}
+
+
+#experts-container {
+    margin: 500px calc(50vw - 320px) 0;
+}
+
+#experts {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 8px;
+}
+#experts img {
+    width: 100%;
+    pointer-events: none;
+}
+#experts > div {
+    padding: 8px;
+    cursor: pointer;
+    user-select: none;
+}
+#experts > div:hover {
+    background: #eee;
+}
+
+#experts > div.selected {
+    background: #ddd;
+}
+.title {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: normal;
+}
+
+#camera-canvas {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
